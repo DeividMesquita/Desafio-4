@@ -28,31 +28,36 @@
       crossorigin="anonymous"
     ></script>
 
+    <!--FANCYBOX-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+
     <title>Street Fighter 6</title>
   </head>
   <body>
     <header class="c-navbar">
       <div class="container-xxl">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="c-container__navgation">
-              <div class="c-navbar__logo">
-                <figure class="m-0">
-                  <a href="#"
-                    ><img src="assets/img/logo.png.png" alt="logo ST6"
-                  /></a>
-                </figure>
-              </div>
-              <div class="c-navbar__list">
-                <ul class="p-0 m-0">
-                  <li class="p-0 m-0"><a href="#Inicio">Inicio</a></li>
-                  <li class="p-0 m-0"><a href="#Sobre">Sobre</a></li>
-                  <li class="p-0 m-0">
-                    <a href="#Personagens">Personagens</a>
-                  </li>
-                  <li class="p-0 m-0"><a href="#Galeria">Galeria</a></li>
-                </ul>
-              </div>
+          <div class="c-container__navgation">
+            <div class="c-navbar__logo">
+              <figure class="m-0">
+                <a href="#"
+                  ><img src="assets/img/logo.png.png" alt="logo ST6"
+                /></a>
+              </figure>
+            </div>
+            <div class="c-navbar__list">
+              <ul class="p-0 m-0">
+                <li class="p-0 m-0"><a href="#Inicio">Inicio</a></li>
+                <li class="p-0 m-0"><a href="#sobre">Sobre</a></li>
+                <li class="p-0 m-0">
+                  <a href="#personagens">Personagens</a>
+                </li>
+                <li class="p-0 m-0"><a href="#galeria">Galeria</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -62,26 +67,615 @@
     <main>
       <section class="c-destaque"></section>
 
-      <section class="c-about">
+      <section class="c-about" id="sobre">
         <div class="container-xxl">
           <div class="row">
-            <div class="c-about__content">
+            <div class="c-about__content col-lg-4">
               <div class="c-about__h1">
                 <h1 class="m-0">Sobre</h1>
               </div>
-
               <div class="c-about__line"></div>
-              
+
               <div class="c-about__p m-0">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Tenetur, odit magni! Officiis atque sit dolore ea adipisci
                 excepturi, quia omnis illum? Provident minima, ipsam nesciunt
                 consectetur minus fugiat vero beatae!
               </div>
+              <div class="c-about__button">
+                <button class="c-about__btn">Detalhes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-caracters">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="c-caracters__content" id="personagens">
+              <div class="c-caracters__titulo">
+                <h1>Personagens</h1>
+              </div>
+              <div class="c-caracters__cards">
+                <figure
+                  class="m-0"
+                  data-bs-toggle="modal"
+                  data-bs-target="#ryu"
+                >
+                  <a href="#personagens"><img src="assets/img/ryu.png" alt="Ryu" /></a>
+                </figure>
+
+                <figure class="m-0" data-bs-toggle="modal"
+                data-bs-target="#chunli">
+                  <a href="#personagens"
+                    ><img src="assets/img/chunli.png" alt="chunli"
+                  /></a>
+                </figure>
+
+                <figure class="m-0" data-bs-toggle="modal"
+                data-bs-target="#cammy">
+                  <a href="#personagens"><img src="assets/img/cammy.png" alt="Cammy" /></a>
+                </figure>
+
+                <figure class="m-0" data-bs-toggle="modal"
+                data-bs-target="#zangief">
+                  <a href="#personagens"
+                    ><img src="assets/img/zangief.png" alt="Zangief"
+                  /></a>
+                </figure>
+              </div>
+
+              <div class="c-caracters__cards" id="personagens2">
+                <figure class="m-0" data-bs-toggle="modal"
+                data-bs-target="#blanka">
+                  <a href="#personagens2"
+                    ><img src="assets/img/blanka.png" alt="Blanka"
+                  /></a>
+                </figure>
+
+                <figure class="m-0" data-bs-toggle="modal"
+                data-bs-target="#juri">
+                  <a href="#personagens2"><img src="assets/img/juri.png" alt="Juri" /></a>
+                </figure>
+
+                <figure class="m-0" data-bs-toggle="modal"
+                data-bs-target="#ken">
+                  <a href="#personagens2"><img src="assets/img/ken.png" alt="Ken" /></a>
+                </figure>
+
+                <figure class="m-0" data-bs-toggle="modal"
+                data-bs-target="#marisa">
+                  <a href="#personagens2"
+                    ><img src="assets/img/marisa.png" alt="Marisa"
+                  /></a>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-fancybox">
+        <div class="container-xxl">
+          <div class="row">
+            <div class="c-fancybox__content" id="galeria">
+              <div class="c-fancybox__titulo">
+                <h1>Galeria</h1>
+              </div>
+              <div class="c-fancybox__galeria" id="gallery">
+                <a href="assets/img/Fancybox1.png" data-fancybox="gallery">
+                  <img src="assets/img/Fancybox1.png" alt="Imagem 1" />
+                </a>
+                <a href="assets/img/Fancybox2.png" data-fancybox="gallery">
+                  <img src="assets/img/Fancybox2.png" alt="Imagem 2" />
+                </a>
+                <a href="assets/img/Fancybox3.png" data-fancybox="gallery">
+                  <img src="assets/img/Fancybox3.png" alt="Imagem 2" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    
+
+    <!--MODAL RYU-->
+    <div
+      class=" modal fade"
+      id="ryu"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header bg-black">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: #fff;">
+              Ryu
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body__content">
+              <div class="modal-body__img">
+                <figure>
+                  <img src="assets/img/ryu.png" alt="ryu.png">
+                </figure>
+              </div>
+              <div class="modal-body__sinopse">
+                <div class="modal-body__nome">
+                  <h1>Ryu</h1>
+                </div>
+                <div class="modal-body__resumo">
+                  <p> Treinando incessantemente, este lutador busca a verdadeira força. Sincero e educado, Ryu viaja pelo mundo em busca de oponentes dignos.
+                    Depois de dominar o Satsui no Hado, agora ele busca alçar novos voos.</p> 
+                </div>
+                <div class="modal-body__espec">
+                  <ul>
+                    <li>Odeia: <span>Aranhas</span></li>
+                    <li>Curte: <span>Artes Marciais</span></li>
+                    <li>Altura: <span>1.75 m</span></li>
+                    <li>Peso: <span>85kg</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-black">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL CHUN-LI-->
+    <div
+      class=" modal fade"
+      id="chunli"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header bg-black">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: #fff;">
+              Chun-Li
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body__content">
+              <div class="modal-body__img">
+                <figure>
+                  <img src="assets/img/chunli.png" alt="ryu.png">
+                </figure>
+              </div>
+              <div class="modal-body__sinopse">
+                <div class="modal-body__nome">
+                  <h1>Ryu</h1>
+                </div>
+                <div class="modal-body__resumo">
+                  <p> Ex-agente em ascensão da ICPO, Chun-Li cuida de Li-Fen, vítima do Incidente da Black Moon. Com a Shadaloo agora dividida, Chun-Li dá aulas de kung fu e se tornou uma figura adorada pela comunidade local.</p> 
+                </div>
+                <div class="modal-body__espec">
+                  <ul>
+                    <li>Odeia: <span>crime, indecisão</span></li>
+                    <li>Curte: <span>dias de folga, fazer compras com Li-Fen</span></li>
+                    <li>Altura: <span>1,69 m</span></li>
+                    <li>Peso: <span>segredo♡</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-black">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL CAMMY-->
+    <div
+      class=" modal fade"
+      id="cammy"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header bg-black">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: #fff;">
+              Cammy
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body__content">
+              <div class="modal-body__img">
+                <figure>
+                  <img src="assets/img/cammy.png" alt="ryu.png">
+                </figure>
+              </div>
+              <div class="modal-body__sinopse">
+                <div class="modal-body__nome">
+                  <h1>Cammy</h1>
+                </div>
+                <div class="modal-body__resumo">
+                  <p> Integrante da unidade das forças especiais britânicas Delta Red. Destacou-se na operação contra a Shadaloo, com a qual tem uma ligação predestinada. Ultracompetente, mas taciturna. Trabalha no QG atualmente.</p> 
+                </div>
+                <div class="modal-body__espec">
+                  <ul>
+                    <li>Odeia: <span>Tudo (se estiver mal-humorada)</span></li>
+                    <li>Curte: <span>Gatos</span></li>
+                    <li>Altura: <span>1,64 m</span></li>
+                    <li>Peso: <span>61 kg</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-black">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL ZANGIEF-->
+    <div
+      class=" modal fade"
+      id="zangief"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header bg-black">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: #fff;">
+              Zangief
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body__content">
+              <div class="modal-body__img">
+                <figure>
+                  <img src="assets/img/zangief.png" alt="ryu.png">
+                </figure>
+              </div>
+              <div class="modal-body__sinopse">
+                <div class="modal-body__nome">
+                  <h1>Zangief</h1>
+                </div>
+                <div class="modal-body__resumo">
+                  <p> Um lutador gigantesco conhecido como Ciclone Vermelho. Zangief se dedica a melhorar o próprio físico e orientar estudantes.</p> 
+                </div>
+                <div class="modal-body__espec">
+                  <ul>
+                    <li>Odeia: <span>Projéteis (Hadokens, por exemplo)</span></li>
+                    <li>Curte: <span>Luta livre, dança cossaca</span></li>
+                    <li>Altura: <span>2,14 m</span></li>
+                    <li>Peso: <span>181 kg</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-black">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL PART2-->
+
+    <!--MODAL Blanka-->
+    <div
+      class=" modal fade"
+      id="blanka"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header bg-black">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: #fff;">
+              Blanka
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body__content">
+              <div class="modal-body__img">
+                <figure>
+                  <img src="assets/img/blanka.png" alt="ryu.png">
+                </figure>
+              </div>
+              <div class="modal-body__sinopse">
+                <div class="modal-body__nome">
+                  <h1>Blanka</h1>
+                </div>
+                <div class="modal-body__resumo">
+                  <p> Defensor benevolente da natureza, Blanka se tornou guia turístico de aventuras, acreditando que a intimidade com a selva servirá de passaporte para a fama e garantirá uma vida boa para sua amada mãe.</p> 
+                </div>
+                <div class="modal-body__espec">
+                  <ul>
+                    <li>Odeia: <span>Formigas-correição</span></li>
+                    <li>Curte: <span>Samantha, bonecos do Blanka-chan</span></li>
+                    <li>Altura: <span>1,92 m</span></li>
+                    <li>Peso: <span>98 kg</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-black">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL JURI-->
+    <div
+      class=" modal fade"
+      id="juri"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header bg-black">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: #fff;">
+              Juri
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body__content">
+              <div class="modal-body__img">
+                <figure>
+                  <img src="assets/img/juri.png" alt="juri.png">
+                </figure>
+              </div>
+              <div class="modal-body__sinopse">
+                <div class="modal-body__nome">
+                  <h1>Juri</h1>
+                </div>
+                <div class="modal-body__resumo">
+                  <p> Esta caçadora de emoções sádica deriva prazer da angústia e do sofrimento dos outros, se deleitando com a obliteração dos inimigos. Sem a vingança contra M. Bison como força-motriz, ela passa o tempo em névoas.</p> 
+                </div>
+                <div class="modal-body__espec">
+                  <ul>
+                    <li>Odeia: <span>Estraga-prazeres, regras</span></li>
+                    <li>Curte: <span>Motocicletas, aranhas</span></li>
+                    <li>Altura: <span>1,65 m</span></li>
+                    <li>Peso: <span>57 kg</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-black">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL Ken-->
+    <div
+      class=" modal fade"
+      id="ken"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header bg-black">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: #fff;">
+              Ken
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body__content">
+              <div class="modal-body__img">
+                <figure>
+                  <img src="assets/img/ken.png" alt="ken.png">
+                </figure>
+              </div>
+              <div class="modal-body__sinopse">
+                <div class="modal-body__nome">
+                  <h1>Ken</h1>
+                </div>
+                <div class="modal-body__resumo">
+                  <p> Ex-campeão do Campeonato Nacional de Luta e ex-vice-presidente da Fundação Masters. Acusações de orquestrar um plano criminoso forçaram Ken a abandonar negócios e família e se esconder.</p> 
+                </div>
+                <div class="modal-body__espec">
+                  <ul>
+                    <li>Odeia: <span>Reuniões inúteis</span></li>
+                    <li>Curte: <span>Família</span></li>
+                    <li>Altura: <span>1,75 m</span></li>
+                    <li>Peso: <span>83 kg</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-black">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--MODAL MARISA-->
+    <div
+      class=" modal fade"
+      id="marisa"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header bg-black">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: #fff;">
+              Marisa
+            </h1>
+            <button
+              type="button"
+              class="btn-close bg-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="modal-body__content">
+              <div class="modal-body__img">
+                <figure>
+                  <img src="assets/img/marisa.png" alt="marisa.png">
+                </figure>
+              </div>
+              <div class="modal-body__sinopse">
+                <div class="modal-body__nome">
+                  <h1>Marisa</h1>
+                </div>
+                <div class="modal-body__resumo">
+                  <p> Designer de joias italiana promissora que diz descender de guerreiros gregos. Quando criança, uma visão do Coliseu em tempos áureos a inspirou. Hoje, ela busca a glória com um sorriso e olhos afiados para o belo.</p> 
+                </div>
+                <div class="modal-body__espec">
+                  <ul>
+                    <li>Odeia: <span>Altitude</span></li>
+                    <li>Curte: <span>Oponentes dignos, Ossobuco, belas artes</span></li>
+                    <li>Altura: <span>2,03 m</span></li>
+                    <li>Peso: <span>122 kg</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-black">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
