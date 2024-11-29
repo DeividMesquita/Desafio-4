@@ -338,7 +338,9 @@
     cursor: pointer;
   }
 
-
+  .c-about__content {
+    height: 400px;
+  }
   .c-about__h1 h1 {
     font-size: 45px;
     line-height: 60px;
@@ -349,14 +351,18 @@
     line-height: 22px;
   }
 
+  .c-caracters__content {
+    height: 100%;
+  }
 
   .c-caracters__titulo h1 {
     font-size: 50px;
     line-height: 75px;
   }
 
-  .c-about__content {
-    height: 400px;
+  .c-caracters__cards img {
+    width: 300px;
+    height: 500px;
   }
 
   .c-fancybox__galeria img {
@@ -388,6 +394,29 @@
 
 @media (max-width:645px) {
 
+  .c-destaque {
+    height: 700px;
+  }
+
+  .c-about__content {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .c-about__h1 h1{
+    font-size: 35px;
+  }
+
+  .c-about__p p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .c-about__btn {
+    width: 100%;
+  }
 
   .c-caracters__cards {
     display: flex;
@@ -404,16 +433,34 @@
     flex-direction: column;
   }
 
+  .c-fancybox__content {
+    height: 250px;
+  }
+
+  .c-fancybox__titulo h1{
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .modal-header {
+    
+  }
+
   .c-fancybox__galeria img {
-    width: 100px;
+    width: 100%;
+    height: 100px;
   }
 
   .modal-body {
-    width: 100vh;
+    width: 100%;
+  }
+
+  .modal-body__content {
+    gap: 10px;
   }
 
   .modal-body__img img {
-    width: 100px;
+    width: 150px;
 
   }
 
@@ -426,6 +473,7 @@
   .modal-body__resumo p {
     font-size: 14px;
     line-height: 22px;
+    width: 180px;
   }
 
 
