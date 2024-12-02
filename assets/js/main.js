@@ -9,25 +9,23 @@ myModal.addEventListener('shown.bs.modal', () => {
 
 
 
-
-
 //FANCYBOX//
 Fancybox.bind("[data-fancybox='gallery']", {
-    infinite: true,
-    Toolbar: {
-      display: [
-        { id: "back", label: "Voltar", position: "left" }, 
-        "close", 
-      ],
-    },
-    callbacks: {
-      on: {
-        init: (fancybox) => {
-    
-          fancybox.$container.querySelector("[data-fancybox-back]").addEventListener("click", () => {
-            window.history.back();
-          });
-        },
+  infinite: true,
+  Toolbar: {
+    display: [
+      { id: "back", label: "Voltar", position: "left" },
+      "close",
+    ],
+  },
+  callbacks: {
+    on: {
+      init: (fancybox) => {
+
+        fancybox.$container.querySelector("[data-fancybox-back]").addEventListener("click", () => {
+          window.history.back();
+        });
       },
     },
-  });
+  },
+});
