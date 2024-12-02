@@ -342,15 +342,25 @@
 
   .c-about__content {
     height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .c-about__h1 h1 {
     font-size: 45px;
     line-height: 60px;
   }
+  .c-about__line {
+    width: 100%;
+  }
 
   .c-about__p p {
     font-size: 14px;
     line-height: 22px;
+  }
+
+  .c-about__button {
+    width: 100%;
   }
 
   .c-caracters__content {
