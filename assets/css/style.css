@@ -58,7 +58,7 @@
 
 /*DESTAQUE*/
 .c-destaque {
-  background-image: url(assets/img/main-img.png);
+  background-image: url(Desafio-4/assets/img/main-img.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 
 /*SOBRE*/
 .c-about {
-  background-image: url(assets/img/about-img.png);
+  background-image: url(Desafio-4/assets/img/about-img.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -140,7 +140,7 @@
 /*CARACTERS*/
 
 .c-caracters {
-  background-image: url(assets/img/backgorund-cards.png);
+  background-image: url(Desafio-4/assets/img/backgorund-cards.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -232,7 +232,7 @@
 /*MODAL*/
 
 .modal-body {
-  background-image: url(assets/img/backgorund-cards.png);
+  background-image: url(Desafio-4/assets/img/backgorund-cards.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
